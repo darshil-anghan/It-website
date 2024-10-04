@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Libre+Franklin&family=Lora&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&family=Raleway&family=Rubik&family=Ubuntu&display=swap');
+
+
+body{
+
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #e1edff;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+
+
+}
+
+html{
+
+  scroll-behavior: smooth;
+
+}

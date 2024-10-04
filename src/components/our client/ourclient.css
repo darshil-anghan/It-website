@@ -1,0 +1,54 @@
+.scroll-container1 {
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 70px;
+    background-color: white
+
+}
+
+.ani{
+
+  margin-left: 96px;
+
+}
+
+/* .tt {
+    position: relative; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+  }
+
+.tt::after {
+    content: '';
+    display: block;
+    width: 92px; 
+    height: 3px; 
+    background-color: #47679f; 
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  } */
+
+  .tt {
+    font-size: var(--fontsizeheading);
+    font-weight: var(--fontweightheading);
+    font-family: var(--fontfamilyheading);
+    color: var(--colorheading);
+    text-align: center;
+    text-transform: var(--texttransformheading);
+    margin-bottom: 25px;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: var(--colour5);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
+  
+  
+  
+  

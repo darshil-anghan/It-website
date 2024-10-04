@@ -1,0 +1,445 @@
+.navbar {
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    display: none;
+  }
+
+  .imgo{
+
+display: flex;
+
+  }
+  
+.navia{
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: left;
+}
+
+  .navbar-title {
+    font-size: 1.5rem;
+    margin-left: 10px; 
+  }
+  
+  .navbar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 34px;
+    color: #ffffff;
+    margin-right: 20px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 200px; /* Adjust width as needed */
+    max-height: 0;
+    overflow: hidden;
+    transition:  0.3s ease-in-out;
+    position: absolute;
+    top: 60px; /* Adjust top spacing */
+    background: #00283a;
+    background: linear-gradient(87deg, rgba(0,40,58,1) 0%, rgba(0,0,106,1) 50%, rgba(0,71,182,1) 100%);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+  }
+  
+  .nav-item {
+    padding: 10px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    font-size: 23px;
+    color: #ffffff;
+    position: relative;
+    
+  }
+
+.nav-item::after{
+
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+
+  }
+
+  .qwqw{
+
+text-decoration: none;
+
+  }
+  
+  /* .navbar.scrolled {
+    background: #00283a;
+    background: linear-gradient(87deg, rgba(0,40,58,1) 0%, rgba(0,0,106,1) 50%, rgba(0,71,182,1) 100%);
+  } */
+  
+  .expanded .navbar-nav {
+    max-height: 520px; /* Adjust as needed */
+    width: 100%;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-in, transform 1s;
+  }
+  
+  .animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+
+  .responsive_nav {
+    
+         width: 100%; 
+        height: 55px;
+        flex-shrink: 0;
+        display: flex;
+        position: sticky;
+        top: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        z-index: 100;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease-in-out;
+        justify-content: space-between;
+        background: #00283a;
+        background: linear-gradient(87deg, rgba(0,40,58,1) 0%, rgba(0,0,106,1) 50%, rgba(0,71,182,1) 100%);
+    }
+  
+  
+  .responsive_nav.scrolled {
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background: #00283a;
+    background: linear-gradient(87deg, rgba(0,40,58,1) 0%, rgba(0,0,106,1) 50%, rgba(0,71,182,1) 100%);
+  }
+  
+  
+  .logo {
+    margin-left: 0px;
+  }
+  
+  .brand {
+    margin-top: 10px;
+    color: var(--colour6);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .Homenav {
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .Homenav::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .Homenav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .Aboutnav {
+    margin-left: 2px;
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .Aboutnav::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .Aboutnav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .servicenav {
+    margin-left: 2px;
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .servicenav::after {
+    content: "";
+    position: absolute;
+    width: 64%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .servicenav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .skillnav {
+    margin-left: 2px;
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .skillnav::after {
+    content: "";
+    position: absolute;
+    width: 57%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .skillnav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .teamnav {
+    margin-left: 2px;
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .teamnav::after {
+    content: "";
+    position: absolute;
+    width: 68%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .teamnav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .Blognav {
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .Blognav::after {
+    content: "";
+    position: absolute;
+    width: 56%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .Blognav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .contectusnav {
+    margin-left: 2px;
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .contectusnav::after {
+    content: "";
+    position: absolute;
+    width: 73%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .contectusnav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  @media screen and (max-width: 900px) {
+
+    .Homenav{
+
+        display: none;
+      
+      }
+      
+      .Aboutnav{
+      
+        display: none;
+      
+      }
+      
+      .servicenav{
+      
+        display: none;
+      
+      }
+      
+      .skillnav{
+      
+        display: none;
+      
+      }
+      
+      .teamnav{
+      
+        display: none;
+      
+      }
+
+      .Blognav{
+      
+        display: none;
+      
+      }
+      
+      .contectusnav{
+      
+        display: none;
+      
+      }
+      
+     
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.brand{
+
+  width: 282px;
+
+}
+
+  }
+
+  @media screen and (max-width: 399px) {
+
+.brand{
+
+  font-size: 1.5rem;
+
+}
+
+  }
+
+  /* new css */
+
+  

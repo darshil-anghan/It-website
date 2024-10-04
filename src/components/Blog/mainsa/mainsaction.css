@@ -1,0 +1,50 @@
+.mainprivacy{
+
+font-size: 1.2rem;
+box-sizing: content-box;
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 30px;
+
+}
+
+.m-title{
+
+text-align: center;
+padding-bottom: 40px;
+
+
+}
+
+.p-title{
+
+font-size: 1.3rem;
+
+}
+
+.num{
+
+margin-left: 30px;
+
+}
+
+.num00{
+
+  margin-left: 10px;
+  
+  }
+
+.num01{
+
+  margin-left: 20px;
+  
+  }
+
+.num02{
+
+margin-left: 22px;
+
+}
