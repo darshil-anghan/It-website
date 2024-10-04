@@ -33,7 +33,7 @@ const [isVisible, setIsVisible] = useState(false);
     <>
       <div className="container" id="home" >
         <div className="row animate-on-scroll1">
-          <p className="Text">Welcome To navratri ,</p>
+          <p className="Text">Welcome To my navratri ,</p>
           <p className="Text101">Our primary mission revolves around</p>
           <p className="text">
             <div className="typewriter-container ">
